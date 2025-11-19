@@ -3,7 +3,12 @@ package com.codexdei.springboot.di.invoice.di_invoice.models;
 public class Product {
 
     private String name;
-    private Double price;
+    private Integer price;
+
+    public Product(String name, Integer price) {
+        this.name = name;
+        this.price = price;
+    }
     
     public String getName() {
         return name;
@@ -11,10 +16,10 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-    public Double getPrice() {
+    public Integer getPrice() {
         return price;
     }
-    public void setPrice(Double price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
