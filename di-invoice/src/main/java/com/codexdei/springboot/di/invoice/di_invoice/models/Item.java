@@ -23,7 +23,7 @@ public class Item {
         this.quantity = quantity;
     }
 
-    public int getImporte() {
+    public int getAmount() {
         return quantity * product.getPrice();
     }
 
